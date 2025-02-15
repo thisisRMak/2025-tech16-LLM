@@ -1,4 +1,5 @@
 # Archive of my links and homeworks from Tech16 LLM for Business (2025)
+#StanfordTech16 #Tech16
 
 In 2025 winter, I'm taking Tech16. This is a Stanford Continuing Education class, titled LLM for Business with Python. It's taught by Charlie Flannagan. 
 
