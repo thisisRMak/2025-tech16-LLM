@@ -1,0 +1,8 @@
+somepackage; python_version >= "3.10" and python_version < "3.12"
+streamlit
+openai
+llama-index-readers-youtube-transcript
+langchain-community
+crewai
+crewai_tools
+google-api-python-client 
