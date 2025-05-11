@@ -1,9 +1,13 @@
 import streamlit as st
 import os
+from dotenv import load_dotenv
 import yt_rss_reader
 import pandas as pd
 from datetime import datetime, timedelta, tzinfo
 from get_summary import get_summary
+
+# Load environment variables from .env file
+load_dotenv()
 
 # set page to full width
 st.set_page_config(layout="wide")
@@ -11,8 +15,11 @@ st.title("AI News Summarizer")
 
 st.write("Here are links to the 15 most recent videos from our favorite YouTube channels about AI.")
 
-
-
+# Check for OpenAI API key in environment variables first
+if not st.session_state.get('openai_api_key'):
+    env_api_key = os.getenv('OPENAI_API_KEY')
+    if env_api_key:
+        st.session_state['openai_api_key'] = env_api_key
 
 if 'openai_api_key' not in st.session_state:    
 
